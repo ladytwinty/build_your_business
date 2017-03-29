@@ -1,0 +1,407 @@
+//@import "bourbon/bourbon"
+
+body
+	font-family: 'Ubuntu', sans-serif
+	font-size: 16px
+	min-width: 320px
+.logo
+	margin-top: 15px
+	.logo_wrap
+		display: flex
+		align-items: center
+		.logo_img
+			background-color: #fff
+			width: 40px
+			height: 40px
+			margin-right: 8px
+			display: flex
+			align-items: center
+			a
+				text-decoration: none
+				outline: none
+		.logo_name
+			font-weight: 500
+			font-size: 26px
+			.logo_next
+				display: block
+				color: #afafaf
+				text-transform: uppercase
+				font-size: 8px
+				letter-spacing: 4.2px
+				font-weight: 400
+	.social_wrap
+		text-align: right
+		margin-top: 5px
+		a
+			text-decoration: none
+			outline: none
+			margin-right: 15px
+			vertical-align: middle
+			i
+				color: #cccccc
+				transition: .5s all
+				font-size: 20px
+				&:hover
+					color: #248cec
+.menu
+	margin-top: 30px
+	font-family: 'Ubuntu', sans-serif
+	font-weight: 400
+	.nav
+		padding: 0
+	.menu_wrap
+		background-color: #2a2d32
+		color: #fff
+		box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.6)
+		-webkit-box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.6)
+		-moz-box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.6)
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			overflow: hidden
+			li
+				display: inline-block
+				border-right: 2px solid #434549
+				cursor: pointer
+				padding: 18px 0px
+				a
+					color: #fff
+					padding: 18px 35px
+					text-transform: uppercase
+					font-weight: 400
+					font-size: 13px
+					outline: none
+					transition: .5s all
+					&:hover
+						color: #f4b60d
+			.dropdown
+				display: inline-block
+				//position: relative
+				&:hover
+					.dropdown-content
+						display: block
+				.dropdown-content
+					display: none
+					position: absolute
+					background-color: #f9f9f9
+					//width: 100%
+					min-width: 130px
+					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+					z-index: 1
+					a
+						color: #000
+						padding: 12px 16px
+						text-decoration: none
+						display: block
+		.active
+			background-color: #248cec
+			transition: .5s all
+			color: #fff
+	.search
+		text-align: right
+		padding: 0
+		.search_wrap
+			display: inline-block
+			a
+				text-decoration: none
+				outline: none
+				//padding: 18px 35px
+			i
+				color: #fff
+				font-size: 18px
+				padding: 18px 35px
+				border-left: 2px solid #434549
+				
+.carousel
+	background-image: url("../img/bg_slider.png")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 0
+	box-shadow: 0 0 0 880px rgba(214, 214, 214, .60) inset
+	background-color: #fff
+	max-height: 370px
+	margin-top: 100px
+	.bx-wrapper
+		border: none
+		margin-top: -50px
+		margin-bottom: 50px
+		max-height: 462px
+		box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.48)
+		.bx-viewport
+			//min-height: 462px
+		.bx-pager
+			bottom: 15px
+			.bx-default-pager 
+				a
+					border-radius: none
+					width: 15px
+					height: 15px
+					background-color: #fff
+					padding: 3px
+.main_feature
+	margin-top: 30px
+	.number
+		font-size: 64px
+		color: #e9e9ea
+		font-weight: 500
+	.icon
+		color: #f4b60d
+		font-size: 24px
+		margin-bottom: 5px
+	h3
+		margin: 5px 0
+		font-size: 18px
+	p
+		color: #8a8a8a
+	a
+		color: #000
+		outline: none
+		text-decoration: none
+		transition: .4s all
+		font-weight: 500
+		&:hover
+			color: #248cec
+			i
+				&:hover
+				color: #8a8a8a
+		i
+			color: #248cec
+			margin-left: 7px
+			font-size: 14px
+			vertical-align: center
+.new_banner
+	background-color: #f7f7f7
+	margin-top: 40px
+	padding-bottom: 60px
+	h3
+		font-size: 20px
+	.banner_pair1
+		margin-bottom: 20px
+		position: relative
+	.banner_pair2
+		position: relative
+	.banner_article
+		display: flex
+		align-items: center
+		img
+			margin-right: 15px
+			margin-bottom: 15px
+		.comment
+			margin-top: 5px
+			span
+				color: #248cec
+		h4
+			margin: 0
+		p
+			color: #8a8a8a
+		a
+			outline: none
+			text-decoration: none
+			color: #000
+			&:hover
+				color: #248cec
+	.banner_1
+		background-color: #248cec
+		min-height: 165px
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			border: 10px solid transparent
+			border-right: 15px solid #248cec
+			left: 142px
+			top: 25px
+		img
+			float: left
+			margin-right: 15px
+		.numero1
+			color: #f4b60d
+			font-size: 45px
+			font-weight: 500
+			margin-left: 5px
+			margin-right: 10px
+		.title
+			color: #fff
+			font-weight: 400
+			font-size: 35px
+		.title_font
+			font-size: 28px
+			color: #fff
+			font-weight: 400
+			//margin-left: 45%
+		p
+			margin-left: 45%
+			margin-top: 5px
+	.banner_2
+		background-color: #f4b60d
+		min-height: 165px
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			border: 10px solid transparent
+			border-left: 15px solid #f4b60d
+			right: 142px
+			top: 25px
+		img
+			float: right
+		.numero2
+			color: #248cec
+			font-size: 45px
+			font-weight: 500
+			margin: 20px 15px 0 20px
+		.title
+			color: #000
+			font-weight: 400
+			font-size: 35px
+		.title_font
+			color: #000
+			font-weight: 400
+			font-size: 28px
+.service 
+	background-color: rgba(0,0,0,.8)
+	height: 300px
+	padding-top: 40px
+	.slider2
+		text-align: center
+	.bx-wrapper
+		margin: 0 auto
+		border: none
+		box-shadow: none
+		background-color: rgba(0,0,0,.8)
+		.bx-default-pager
+			display: none
+		.bx-prev
+
+
+.product
+	background-color: #f7f7f7
+	padding-bottom: 60px
+	h3
+		margin-top: 30px
+	.prod_item
+		background-color: #fff
+		//margin-right: 3px
+		//max-width: 23%
+		box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.2)
+		padding: 15px
+		overflow: hidden
+		img
+			width: 100%
+			margin-bottom: 20px
+			transition: .5s all
+			&:hover
+				transform: scale(1.1,1.1)
+		.name_product
+			font-weight: 500
+			a
+				color: #000
+				transition: .5s all
+				&:hover
+					color: #248cec
+		.type
+			text-transform: uppercase
+			color: #9f9f9f
+			font-size: 12px
+		.price
+			color: #248cec
+			margin-top: 15px
+			font-weight: 500
+.brands
+	padding-bottom: 40px
+	.pagination
+		display: inline-block
+		a
+			color: #e3e3e3
+			font-size: 20px
+			padding: 5px 12px
+			text-decoration: none
+			transition: .3s all
+			border: 1px solid #e3e3e3
+			&:hover
+				color: #248cec
+	.slider3
+		.bx-wrapper
+			margin: 0 auto
+			border: none
+			box-shadow: none
+			.bx-pager
+				display: none
+.social
+	//padding-top: 40px
+	background-color: #2a2d32
+	.logo_block
+		padding-right: 0px
+	.logo_wrap
+		display: flex
+		align-items: center
+		background-color: #248cec
+		.logo_img
+			margin: 10px
+			width: 40px
+			height: 40px
+			display: flex
+			align-items: center
+			img
+				box-shadow: 0 0 0 80px rgba(36,140,235,.5) inset
+		.logo_name
+			font-weight: 500
+			font-size: 26px
+			color: #fff
+			.logo_next
+				display: block
+				color: #afafaf
+				text-transform: uppercase
+				font-size: 8px
+				letter-spacing: 4.2px
+				font-weight: 400
+				color: #83bef4
+	.social_block
+		background-color: #3d4044
+		padding: 13px 20px
+		text-align: center
+		a
+			color: #646669
+			font-size: 24px
+			margin-right: 40px
+			&:last-child
+				margin-right: 0px
+	.input_search
+		position: relative
+		background-color: #37393e
+		padding: 14px 20px
+		input
+			padding: 5px
+			background-color: #3f4146
+			border: none
+			outline: none
+			color: #636568
+			width: 100%
+		i
+			color: #5c5d62
+			position: absolute
+			right: 30px
+			top: 22px
+.links
+	background-color: #2a2d32
+	h4
+		color: #fff
+		text-transform: uppercase
+		margin-bottom: 35px
+	a
+		color: #828385
+		display: block
+		transition: .5s all
+		font-size: 14px
+		margin-bottom: 20px
+		padding: 10px 0
+		border-bottom: 1px solid #393c40
+		&:hover
+			color: #248cec
+.footer
+	background-color: #35383c
+	color: #5d6063
+	padding: 15px 0
+	.footer_right
+		text-align: right
