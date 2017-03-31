@@ -269,7 +269,9 @@ body {
   .new_banner .banner_1 {
     background-color: #248cec;
     min-height: 165px;
-    position: relative; }
+    position: relative;
+    padding: 0px 20px 0px 0px;
+    display: block; }
     .new_banner .banner_1:after {
       content: "";
       position: absolute;
@@ -282,25 +284,28 @@ body {
       margin-right: 15px; }
     .new_banner .banner_1 .numero1 {
       color: #f4b60d;
-      font-size: 45px;
+      font-size: 40px;
       font-weight: 500;
       margin-left: 5px;
       margin-right: 10px; }
     .new_banner .banner_1 .title {
       color: #fff;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 35px; }
     .new_banner .banner_1 .title_font {
       font-size: 28px;
       color: #fff;
-      font-weight: 400; }
+      font-weight: 400;
+      margin-left: 12%; }
     .new_banner .banner_1 p {
       margin-left: 45%;
       margin-top: 5px; }
   .new_banner .banner_2 {
     background-color: #f4b60d;
     min-height: 165px;
-    position: relative; }
+    position: relative;
+    padding: 0px 0px 0px 20px;
+    display: block; }
     .new_banner .banner_2:after {
       content: "";
       position: absolute;
@@ -312,17 +317,23 @@ body {
       float: right; }
     .new_banner .banner_2 .numero2 {
       color: #248cec;
-      font-size: 45px;
+      font-size: 40px;
       font-weight: 500;
       margin: 20px 15px 0 20px; }
     .new_banner .banner_2 .title {
       color: #000;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 35px; }
     .new_banner .banner_2 .title_font {
       color: #000;
       font-weight: 400;
-      font-size: 28px; }
+      font-size: 28px;
+      margin-left: 16%; }
+    .new_banner .banner_2 p {
+      color: #fff;
+      width: 50%;
+      margin-left: 16%;
+      margin-top: 5px; }
 
 .service {
   background-color: rgba(0, 0, 0, 0.8);
@@ -361,6 +372,20 @@ body {
         -webkit-transform: scale(1.1, 1.1);
             -ms-transform: scale(1.1, 1.1);
                 transform: scale(1.1, 1.1); }
+    .product .prod_item i {
+      margin-left: 95px;
+      color: #d2d2d2; }
+    .product .prod_item .fa-list-ul {
+      margin-left: 15px; }
+    .product .prod_item hr {
+      margin-top: 0px; }
+    .product .prod_item .product_rect {
+      background-image: url("../img/rectangles.jpg");
+      height: 4px;
+      width: 100%;
+      background-repeat: no-repeat;
+      margin-bottom: 10px;
+      margin-top: 25px; }
     .product .prod_item .name_product {
       font-weight: 500; }
       .product .prod_item .name_product a {
@@ -376,7 +401,8 @@ body {
     .product .prod_item .price {
       color: #248cec;
       margin-top: 15px;
-      font-weight: 500; }
+      font-weight: 500;
+      float: left; }
 
 .social {
   background-color: #2a2d32; }
@@ -475,7 +501,7 @@ body {
   color: #5d6063;
   padding: 15px 0; }
   .footer i {
-    margin-right: 15px;
+    margin-right: 10px;
     font-size: 20px; }
   .footer .footer_right {
     text-align: right; }
