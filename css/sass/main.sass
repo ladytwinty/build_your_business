@@ -11,23 +11,28 @@ body
 		align-items: center
 		.logo_img
 			background-color: #fff
-			width: 40px
-			height: 40px
+			width: 50px
+			height: 50px
 			margin-right: 8px
 			display: flex
 			align-items: center
+			img
+				width: 100%
 			a
 				text-decoration: none
 				outline: none
+				width: 100%
 		.logo_name
 			font-weight: 500
 			font-size: 26px
+			letter-spacing: 1px
 			.logo_next
 				display: block
 				color: #afafaf
 				text-transform: uppercase
-				font-size: 8px
-				letter-spacing: 4.2px
+				font-size: 10px
+				letter-spacing: 4px
+				line-height: 5px
 				font-weight: 400
 	.social_wrap
 		text-align: right
@@ -61,7 +66,7 @@ body
 			list-style-type: none
 			overflow: hidden
 			li
-				display: inline-block
+				display: inline-block !important
 				border-right: 2px solid #434549
 				cursor: pointer
 				padding: 18px 0px
@@ -76,8 +81,6 @@ body
 					&:hover
 						color: #f4b60d
 			.dropdown
-				display: inline-block
-				//position: relative
 				&:hover
 					.dropdown-content
 						display: block
@@ -85,15 +88,16 @@ body
 					display: none
 					position: absolute
 					background-color: #f9f9f9
-					//width: 100%
 					min-width: 130px
 					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
 					z-index: 1
-					a
-						color: #000
-						padding: 12px 16px
-						text-decoration: none
-						display: block
+					li
+						display: block !important
+						a
+							color: #000
+							padding: 12px 16px
+							text-decoration: none
+							
 		.active
 			background-color: #248cec
 			transition: .5s all
@@ -122,6 +126,10 @@ body
 	background-color: #fff
 	max-height: 370px
 	margin-top: 100px
+	color: #000
+	.bxslider
+		title
+			background-color: #fff
 	.bx-wrapper
 		border: none
 		margin-top: -50px
@@ -134,7 +142,7 @@ body
 			bottom: 15px
 			.bx-default-pager 
 				a
-					border-radius: none
+					border-radius: 0px !important
 					width: 15px
 					height: 15px
 					background-color: #fff
@@ -145,10 +153,19 @@ body
 		font-size: 64px
 		color: #e9e9ea
 		font-weight: 500
-	.icon
-		color: #f4b60d
-		font-size: 24px
+	.main_icon
+		width: 32px
+		height: 32px
 		margin-bottom: 5px
+		margin-top: 25px
+		background-repeat: no-repeat
+	.icon1
+		background-image: url("../img/intsr.png")
+	.icon2
+		background-image: url("../img/lines.png")
+
+	.icon3
+		background-image: url("../img/car.png")
 	h3
 		margin: 5px 0
 		font-size: 18px
@@ -179,13 +196,49 @@ body
 	.banner_pair1
 		margin-bottom: 20px
 		position: relative
+	.banner_date1
+		position: absolute
+		top: 20px
+		left: -15px
+		font-size: 14px
+		.blue
+			height: 30px
+			//width: 30px
+			background-color: #248cec
+			color: #fff
+			text-align: center
+			padding: 5px
+		.yellow
+			height: 30px
+			//width: 30px
+			background-color: #f4b60d
+			color: #000
+			text-align: center
+			padding: 5px
+	.banner_date2
+		position: absolute
+		top: 20px
+		left: -15px
+		font-size: 14px
+		.blue
+			height: 30px
+			background-color: #248cec
+			color: #fff
+			text-align: center
+			padding: 5px
+		.yellow
+			height: 30px
+			background-color: #f4b60d
+			color: #000
+			text-align: center
+			padding: 5px
 	.banner_pair2
 		position: relative
 	.banner_article
 		display: flex
 		align-items: center
 		img
-			margin-right: 15px
+			margin-right: 30px
 			margin-bottom: 15px
 		.comment
 			margin-top: 5px
@@ -282,11 +335,13 @@ body
 		margin-top: 30px
 	.prod_item
 		background-color: #fff
-		//margin-right: 3px
-		//max-width: 23%
-		box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.2)
+		margin-right: 60px
+		width: calc(25% - 60px)
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2)
 		padding: 15px
 		overflow: hidden
+		&:last-child
+			margin-right: 0px
 		img
 			width: 100%
 			margin-bottom: 20px
@@ -309,27 +364,8 @@ body
 			margin-top: 15px
 			font-weight: 500
 .brands
-	padding-bottom: 40px
-	.pagination
-		display: inline-block
-		a
-			color: #e3e3e3
-			font-size: 20px
-			padding: 5px 12px
-			text-decoration: none
-			transition: .3s all
-			border: 1px solid #e3e3e3
-			&:hover
-				color: #248cec
-	.slider3
-		.bx-wrapper
-			margin: 0 auto
-			border: none
-			box-shadow: none
-			.bx-pager
-				display: none
+	
 .social
-	//padding-top: 40px
 	background-color: #2a2d32
 	.logo_block
 		padding-right: 0px
@@ -337,34 +373,37 @@ body
 		display: flex
 		align-items: center
 		background-color: #248cec
+		padding: 5px 20px
 		.logo_img
-			margin: 10px
-			width: 40px
-			height: 40px
+			margin-right: 10px
+			width: 50px
+			height: 50px
 			display: flex
 			align-items: center
 			img
-				box-shadow: 0 0 0 80px rgba(36,140,235,.5) inset
+				width: 90%
 		.logo_name
 			font-weight: 500
 			font-size: 26px
 			color: #fff
+			letter-spacing: 1px
 			.logo_next
 				display: block
 				color: #afafaf
 				text-transform: uppercase
-				font-size: 8px
-				letter-spacing: 4.2px
+				font-size: 10px
+				letter-spacing: 4px
+				line-height: 5px
 				font-weight: 400
 				color: #83bef4
 	.social_block
 		background-color: #3d4044
-		padding: 13px 20px
+		padding: 15px 20px
 		text-align: center
 		a
 			color: #646669
-			font-size: 24px
-			margin-right: 40px
+			font-size: 20px
+			margin-right: 50px
 			&:last-child
 				margin-right: 0px
 	.input_search
@@ -376,32 +415,39 @@ body
 			background-color: #3f4146
 			border: none
 			outline: none
-			color: #636568
+			color: #646669
 			width: 100%
+			text-indent: 5px
 		i
-			color: #5c5d62
+			color: #646669
 			position: absolute
 			right: 30px
 			top: 22px
 .links
 	background-color: #2a2d32
+	padding: 30px 0px 40px 0px
 	h4
 		color: #fff
 		text-transform: uppercase
-		margin-bottom: 35px
+		margin-bottom: 30px
 	a
 		color: #828385
 		display: block
 		transition: .5s all
 		font-size: 14px
-		margin-bottom: 20px
-		padding: 10px 0
+		margin-bottom: 10px
+		padding: 5px 0
 		border-bottom: 1px solid #393c40
+		&:last-child
+			border-bottom: none
 		&:hover
 			color: #248cec
 .footer
 	background-color: #35383c
 	color: #5d6063
 	padding: 15px 0
+	i
+		margin-right: 15px
+		font-size: 20px
 	.footer_right
 		text-align: right
